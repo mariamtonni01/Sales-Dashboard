@@ -60,13 +60,13 @@ Structured the model with one central fact table and surrounding dimension table
 ```
                 sales_Date
                     │
-Sales_Product ── Sales_Transaction ── Sales_Customer
+Sales_Products ── Sales_Transactions ── Sales_Customers
                     │
-                Sales_Market
+                Sales_Markets
 ```
 
 - **Sales_Transaction**: transactional records (Revenue, Quantity, foreign keys)
-- **Sales_Date / Sales_Product / Sales_Customer / Sales_Market**: descriptive attributes
+- **Sales_Date / Sales_Products / Sales_Customers / Sales_Markets**: descriptive attributes
 - Relationships set to **one-to-many**, single-direction filter flow from dimensions to fact
 - Verified relationship cardinality and cross-filter direction to avoid ambiguous filtering
 
@@ -114,6 +114,9 @@ YoY Revenue Growth =
 ---
 
 ## 📷 Dashboard Preview
+
+<img width="565" height="334" alt="image" src="https://github.com/user-attachments/assets/5da7a8d3-c0af-40ad-93b2-f5ab28e02b1a" />
+
 
 <img width="599" height="341" alt="Screenshot 2026-07-24 183323" src="https://github.com/user-attachments/assets/fe2bc24a-d822-4bda-b559-2b26abfdda0d" />
 
